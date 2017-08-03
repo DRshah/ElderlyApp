@@ -145,7 +145,7 @@ public class SOSActivity extends AppCompatActivity implements android.location.L
     public void EmergencyMessage(double lat,double lng) {
         SmsManager smsManager = SmsManager.getDefault();
         String sms ="http://maps.google.com/?q="+lat+","+lng;
-        String phoneNumber = "9930945890";
+        String phoneNumber = "";//add contacts
         Log.d("COORDINATES", sms);
         smsManager.sendTextMessage(phoneNumber, null, sms+ad, null, null);
     }
